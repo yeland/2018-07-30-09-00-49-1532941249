@@ -16,11 +16,11 @@ class Sequence {
   minimum() {
     // Write your code here
 	var min = this.arr[0];
-	for(var i=0;i<this.arr.length-1;i++){
-		if(min<this.arr[i+1])
+	for(var i=0;i<this.arr.length;i++){
+		if(min<this.arr[i])
 		    min = min;
 		else
-			min = this.arr[i+1];
+			min = this.arr[i];
 	}
 	return min;
   }
@@ -29,18 +29,17 @@ class Sequence {
   maximum() {
     // Write your code here
 	var max = this.arr[0];
-	for(var i=0;i<this.arr.length-1;i++){
-		if(max>this.arr[i+1])
+	for(var i=0;i<this.arr.length;i++){
+		if(max>this.arr[i])
 		    max = max;
 		else
-			max = this.arr[i+1];
+			max = this.arr[i];
 	}
 	return max;
   }  
   
   datanum() {
-	var num = 0;
-	num = this.arr.length;
+	var num = this.arr.length;
     
 	return num;
   }
@@ -48,12 +47,15 @@ class Sequence {
   average(){
 	var avg = 0;
     var sum = 0; 
+	var num = 0;
     var s = 0;
     for(var i=0;i<this.arr.length;i++){
         sum = sum + this.arr[i];	
     }
-    s = sum / this.arr.length;
-    avg = Math.round(s*100)/100;	
+	num = this.arr.length
+    s = sum / num;
+    //avg = Math.round(s*100)/100;	
+	avg = s.toFixed(2);
 	
 	return avg;
   }
