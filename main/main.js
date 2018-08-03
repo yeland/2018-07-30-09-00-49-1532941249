@@ -17,10 +17,11 @@ class Sequence {
     // Write your code here
 	var min = this.arr[0];
 	for(var i=0;i<this.arr.length;i++){
-		if(min<this.arr[i])
+		if(min<this.arr[i]){
 		    min = min;
-		else
+		}else{
 			min = this.arr[i];
+		}
 	}
 	return min;
   }
@@ -30,10 +31,11 @@ class Sequence {
     // Write your code here
 	var max = this.arr[0];
 	for(var i=0;i<this.arr.length;i++){
-		if(max>this.arr[i])
+		if(max>this.arr[i]){
 		    max = max;
-		else
+		}else{
 			max = this.arr[i];
+		}
 	}
 	return max;
   }  
