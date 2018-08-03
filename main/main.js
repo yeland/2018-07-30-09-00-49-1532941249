@@ -52,7 +52,7 @@ class Sequence {
     for(var i=0;i<this.arr.length;i++){
         sum = sum + this.arr[i];	
     }
-	num = this.arr.length
+	num = this.arr.length;
     s = sum / num;
     avg = Math.round(s*100)/100;	
 	
