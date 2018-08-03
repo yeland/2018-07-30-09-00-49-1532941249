@@ -54,8 +54,7 @@ class Sequence {
     }
 	num = this.arr.length
     s = sum / num;
-    //avg = Math.round(s*100)/100;	
-	avg = s.toFixed(2);
+    avg = Math.round(s*100)/100;	
 	
 	return avg;
   }
